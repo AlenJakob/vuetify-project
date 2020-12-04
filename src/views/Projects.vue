@@ -10,7 +10,7 @@
 export default {
   data() {
     return {
-      url: "my-json-server.typicode.com/",
+      url: "my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
     };
   },
 };
