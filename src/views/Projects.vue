@@ -13,5 +13,8 @@ export default {
       url: "my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
     };
   },
+  mounted() {
+    console.log(this.$store.state.count);
+  },
 };
 </script>
