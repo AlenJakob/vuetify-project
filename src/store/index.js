@@ -4,8 +4,9 @@ import axios from "axios";
 Vue.use(Vuex, axios);
 
 export default new Vuex.Store({
+ 
   state: {
-    count: 0,
+    count: 1,
   },
   mutations: {
     increment(state) {
