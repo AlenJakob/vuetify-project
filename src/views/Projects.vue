@@ -1,0 +1,17 @@
+<template>
+  <div class="about">
+    <h1>Projects</h1>
+  </div>
+</template>
+
+
+
+<script>
+export default {
+  data() {
+    return {
+      url: "my-json-server.typicode.com/",
+    };
+  },
+};
+</script>

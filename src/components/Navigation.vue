@@ -32,7 +32,7 @@
         dark
         v-model="drawer"
         absolute
-        :right="$vuetify.rtl"
+        :right="direction.ltr"
         temporary
       >
         <v-list-item>
@@ -50,9 +50,9 @@
         <v-list dense>
           <v-list-item v-for="link in links" :key="link.to" link>
             <v-list-item-content>
-              <router-link :to="link.dir">
+              <v-btn text :to="link.dir">
                 {{ link.to }}
-              </router-link>
+              </v-btn>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -65,7 +65,8 @@
 export default {
   data() {
     return {
-      drawer: true,
+      direction: { rtl: true, ltr: false },
+      drawer: false,
       links: [
         { id: 1, to: "Home", dir: "/home" },
         { id: 2, to: "About", dir: "/about" },
@@ -74,13 +75,14 @@ export default {
       ],
     };
   },
+  mounted() {},
 };
 </script>
 
 <style lang="scss">
 a {
-    color:white!important;
-    text-decoration: none;
-    text-align: center;
+  color: white !important;
+  text-decoration: none;
+  text-align: center;
 }
 </style>
