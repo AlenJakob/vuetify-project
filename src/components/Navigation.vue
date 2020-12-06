@@ -9,7 +9,7 @@
           <v-btn text :to="link.dir">{{ link.to }}</v-btn>
         </v-toolbar-items>
 
-        <!-- <template v-if="$vuetify.breakpoint.smAndUp">
+        <template v-if="$vuetify.breakpoint.smAndUp">
           <v-btn icon>
             <v-icon>mdi-export-variant</v-icon>
           </v-btn>
@@ -19,14 +19,9 @@
           <v-btn icon>
             <v-icon>mdi-plus-circle</v-icon>
           </v-btn>
-        </template> -->
+        </template> 
       </v-app-bar>
 
-      <!-- <v-col cols="12" class="text-center">
-        <v-btn class="primary mt-5" @click="$vuetify.rtl = !$vuetify.rtl">
-          Toglle RTL
-        </v-btn>
-      </v-col> -->
 
       <v-navigation-drawer
         dark
@@ -37,11 +32,11 @@
       >
         <v-list-item>
           <v-list-item-avatar>
-            <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
+            <v-img src="https://avatars2.githubusercontent.com/u/33994452?v=4"></v-img>
           </v-list-item-avatar>
 
           <v-list-item-content>
-            <v-list-item-title>John Leider</v-list-item-title>
+            <v-list-item-title>Alen Jakob</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 

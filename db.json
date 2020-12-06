@@ -13,6 +13,21 @@
                 "VueJs"
             ],
             "date": "16-12-2020"
+        },
+        {
+            "id": 2,
+            "title": "Website 2",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veliexercitationem laboriosam aliquam nisi sint delectus ipsum,  atque pariatur nesciunt. Est ipsam animi a!",
+            "image": "link 2 jpg",
+            "creator": "Alen",
+            "technologies": [
+                "Javascript",
+                "HTML5",
+                "CSS3",
+                "VueJs",
+                "Vuetify"
+            ],
+            "date": "16-12-2020"
         }
     ]
 }
