@@ -5,7 +5,7 @@
             "title": "Landing Page Polygon Images",
             "content": "Simple Landing Page builded by scratch",
             "image": "https://i.ibb.co/Snj7QB8/landing-pagepolygon-web-app-1.png",
-            "creator": "Alen",
+            "creator": "Alen Jakob",
             "technologies": [
                 "Javascript",
                 "Jquery",
@@ -18,20 +18,90 @@
         },
         {
             "id": 2,
-            "title": "Website 2",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veliexercitationem laboriosam aliquam nisi sint delectus ipsum,  atque pariatur nesciunt. Est ipsam animi a!",
-            "image": "link 2 jpg",
-            "creator": "Alen",
+            "title": "Music Website",
+            "content": "Website created from scratch, Color changer mode & full responsive design",
+            "image": "https://i.ibb.co/Wybgvxx/music-web.png",
+            "creator": "Alen Jakob",
             "technologies": [
                 "Javascript",
                 "HTML5",
                 "CSS3",
-                "VueJs",
-                "Vuetify"
+                "Sass",
+                "Rwd"
             ],
-            "sourceLink": "",
-            "projectLink": "",
-            "date": "16-12-2020"
+            "sourceLink": "https://github.com/AlenJakob/Music-web",
+            "projectLink": "https://music-web-c59b4.web.app",
+            "date": "2018-09-11"
+        },
+        {
+            "id": 3,
+            "title": "Web Service Development",
+            "content": "Website offer a full service for creating a website's , Landing page ,business website ",
+            "image": "https://i.ibb.co/wgBwhbq/web-services.png",
+            "creator": "Alen Jakob",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "Bulma",
+                "Rwd",
+                "VueJs",
+                "Javascript"
+            ],
+            "sourceLink": "https://github.com/AlenJakob/frelance-web",
+            "projectLink": "https://web-services-802a4.web.app",
+            "date": "2020-09-05"
+        },
+        {
+            "id": 4,
+            "title": "Vanilla Javascript Bicycle Cards",
+            "content": "Website offers & displays Bicycles. The Bicycles can be sorted by price lowest to highest and highest to lowest or between to given value's",
+            "image": "https://i.ibb.co/0BbJ7gJ/bicycle-product.png",
+            "creator": "Alen Jakob",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "Bulma",
+                "Rwd",
+                "Javascript"
+            ],
+            "sourceLink": "https://github.com/AlenJakob/vanilla-js-cards",
+            "projectLink": "https://bicycle-product.web.app",
+            "date": "2020-10-25"
+        },
+        {
+            "id": 5,
+            "title": "Serial number checker",
+            "content": "The warranty software which help customer to check the period of warranty( full information ) , how many months had passed from the production date to the current date",
+            "image": "https://i.ibb.co/NjSp7ht/warranty-checker.png",
+            "creator": "Alen Jakob",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "Bulma",
+                "Rwd",
+                "Javascript"
+            ],
+            "sourceLink": "https://github.com/AlenJakob/serialno-checker",
+            "projectLink": "https://warranty-checker-255c2.web.app",
+            "date": "2020-07-21"
+        },
+        {
+            "id": 6,
+            "title": "Contact Form",
+            "content": "The contact form is working with firebase, last time added an option to read all messages after login the user the messages will be displayed bottom of the website that we are able to delete , the option is set for testing purpose",
+            "image": "https://i.ibb.co/vXrdv5m/contact-form.png",
+            "creator": "Alen Jakob",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "Bulma",
+                "Rwd",
+                "Javascript",
+                "Firebase"
+            ],
+            "sourceLink": "https://github.com/AlenJakob/form-snippet",
+            "projectLink": "https://contact-form-ef310.web.app",
+            "date": "2020-11-07"
         }
     ]
 }

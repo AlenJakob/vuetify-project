@@ -2,8 +2,9 @@
   <v-card class="mx-auto" max-width="400">
     <v-img
       class="white--text align-end"
-      height="250px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      height="300px"
+      :src="project.image"
+      :alt="project.image"
     >
     </v-img>
 
@@ -21,7 +22,7 @@
     <v-card-actions class="my-2 pb-2">
       <v-btn elevation="2" depressed> View Source </v-btn>
       <v-btn elevation="2" color="success" depressed> Visit Website </v-btn>
-      <v-btn elevation="2"  depressed> Read more... </v-btn>
+      <v-btn elevation="2" depressed> Read more... </v-btn>
     </v-card-actions>
   </v-card>
 </template>
