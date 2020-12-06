@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto height-card d-flex flex-column" max-width="540">
+  <v-card class="mx-auto height-card" max-width="540">
     <v-img
       class="white--text align-end"
       :src="project.image"
@@ -21,7 +21,9 @@
         </v-chip-group>
       </v-card-actions>
       <v-card-actions class="my-2 pb-1 justify-center">
-        <v-btn elevation="2" depressed> View Source </v-btn>
+        <v-btn elevation="2" class="black" depressed :href="project.sourceLink">
+          View Source
+        </v-btn>
         <v-btn
           elevation="2"
           color="success"
@@ -48,6 +50,6 @@ export default {
 
 <style lang="scss">
 .height-card {
-  height: 680px;
+  height: 700px;
 }
 </style>

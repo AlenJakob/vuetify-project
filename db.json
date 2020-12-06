@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Landing Page Polygon Images",
-            "content": "Simple Landing Page builded by scratch",
+            "content": "Simple Landing Page builded from scratch using vanilla javascript",
             "image": "https://i.ibb.co/qyNmqTg/landing-pagepolygon-1.png",
             "creator": "Alen Jakob",
             "technologies": [

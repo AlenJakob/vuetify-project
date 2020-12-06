@@ -9,7 +9,7 @@
           <v-btn text :to="link.dir">{{ link.to }}</v-btn>
         </v-toolbar-items>
 
-        <template v-if="$vuetify.breakpoint.smAndUp">
+        <!-- <template v-if="$vuetify.breakpoint.smAndUp">
           <v-btn icon>
             <v-icon>mdi-export-variant</v-icon>
           </v-btn>
@@ -19,7 +19,8 @@
           <v-btn icon>
             <v-icon>mdi-plus-circle</v-icon>
           </v-btn>
-        </template> 
+        </template>  -->
+
       </v-app-bar>
 
 
