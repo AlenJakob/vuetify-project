@@ -63,8 +63,7 @@ export default {
       direction: { rtl: true, ltr: false },
       drawer: false,
       links: [
-        { id: 1, to: "Home", dir: "/home" },
-        { id: 2, to: "About", dir: "/about" },
+        { id: 2, to: "About me", dir: "/" },
         { id: 3, to: "Projects", dir: "/projects" },
         { id: 4, to: "Contact", dir: "/contact" },
       ],

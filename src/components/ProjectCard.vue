@@ -13,11 +13,15 @@
     <v-card-text class="text--primary">
       <div>{{ project.content }}</div>
     </v-card-text>
-
     <v-card-actions>
-      <v-btn color="red" text> Share </v-btn>
-
-      <v-btn color="blue" text> Explore </v-btn>
+      <v-chip-group v-for="tech in project.technologies" :key="tech">
+        <v-chip>{{ tech }}</v-chip>
+      </v-chip-group>
+    </v-card-actions>
+    <v-card-actions class="my-2 pb-2">
+      <v-btn elevation="2" depressed> View Source </v-btn>
+      <v-btn elevation="2" color="success" depressed> Visit Website </v-btn>
+      <v-btn elevation="2"  depressed> Read more... </v-btn>
     </v-card-actions>
   </v-card>
 </template>

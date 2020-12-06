@@ -1,7 +1,8 @@
 <template>
   <div class="about">
-    <h1>Projects</h1>
-    {{ projectsList }}
+ <v-app-bar class="mb-5">
+      <h4>Projects</h4>
+ </v-app-bar>
     <v-container>
       <v-layout row>
         <v-flex class="my-5" fluid v-for="project in projectsList" :key="project.id" xs12 md6>

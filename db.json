@@ -2,17 +2,19 @@
     "projects": [
         {
             "id": 1,
-            "title": "Website",
-            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veliexercitationem laboriosam aliquam nisi sint delectus ipsum,  atque pariatur nesciunt. Est ipsam animi a!",
-            "image": "link jpg",
+            "title": "Landing Page Polygon Images",
+            "content": "Simple Landing Page builded by scratch",
+            "image": "https://i.ibb.co/Snj7QB8/landing-pagepolygon-web-app-1.png",
             "creator": "Alen",
             "technologies": [
                 "Javascript",
+                "Jquery",
                 "HTML5",
-                "CSS3",
-                "VueJs"
+                "CSS3"
             ],
-            "date": "16-12-2020"
+            "sourceLink": "https://github.com/AlenJakob/landing-page",
+            "projectLink": "https://landing-pagepolygon.web.app",
+            "date": "2018-04-18"
         },
         {
             "id": 2,
@@ -27,6 +29,8 @@
                 "VueJs",
                 "Vuetify"
             ],
+            "sourceLink": "",
+            "projectLink": "",
             "date": "16-12-2020"
         }
     ]
