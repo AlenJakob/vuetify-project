@@ -48,6 +48,6 @@ export default {
 
 <style lang="scss">
 .height-card {
-  height: 660px;
+  height: 680px;
 }
 </style>
