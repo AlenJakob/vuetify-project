@@ -6,7 +6,6 @@
       <v-layout row>
         <v-flex class="my-5" fluid v-for="project in projectsList" :key="project.id" xs12 md6>
           <ProjectCard :project="project" />
-          
          <v-divider class="mt-10"></v-divider>
         </v-flex>
       </v-layout>

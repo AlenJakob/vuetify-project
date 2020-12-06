@@ -7,13 +7,11 @@
     >
     </v-img>
 
-    <v-card-title>Top 10 Australian beaches</v-card-title>
-    <v-card-subtitle class="pb-0"> Number 10 </v-card-subtitle>
+    <v-card-title>{{ project.title }}</v-card-title>
+    <v-card-subtitle class="pb-0">{{ project.id }} </v-card-subtitle>
 
     <v-card-text class="text--primary">
-      <div>Whitehaven Beach</div>
-
-      <div>Whitsunday Island, Whitsunday Islands</div>
+      <div>{{ project.content }}</div>
     </v-card-text>
 
     <v-card-actions>
