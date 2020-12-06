@@ -19,7 +19,7 @@
         {
             "id": 2,
             "title": "Music Website",
-            "content": "Website created from scratch, Color changer mode & full responsive design",
+            "content": "Website created from scratch, Color changer mode & full responsive design.",
             "image": "https://i.ibb.co/Wybgvxx/music-web.png",
             "creator": "Alen Jakob",
             "technologies": [
@@ -36,14 +36,13 @@
         {
             "id": 3,
             "title": "Web Service Development",
-            "content": "Website offer a full service for creating a website's , Landing page ,business website ",
+            "content": "Website offer a full service for creating a website's , Landing page ,business website.",
             "image": "https://i.ibb.co/wgBwhbq/web-services.png",
             "creator": "Alen Jakob",
             "technologies": [
                 "HTML5",
                 "CSS3",
                 "Bulma",
-                "Rwd",
                 "VueJs",
                 "Javascript"
             ],
@@ -54,7 +53,7 @@
         {
             "id": 4,
             "title": "Vanilla Javascript Bicycle Cards",
-            "content": "Website offers & displays Bicycles. The Bicycles can be sorted by price lowest to highest and highest to lowest or between to given value's",
+            "content": "Website offers & displays Bicycles. The Bicycles can be sorted by price lowest to highest and highest to lowest or between to given value's.",
             "image": "https://i.ibb.co/0BbJ7gJ/bicycle-product.png",
             "creator": "Alen Jakob",
             "technologies": [
@@ -71,7 +70,7 @@
         {
             "id": 5,
             "title": "Serial number checker",
-            "content": "The warranty software which help customer to check the period of warranty( full information ) , how many months had passed from the production date to the current date",
+            "content": "The warranty software which help customer to check the period of warranty( full information ) , how many months had passed from the production date to the current date.",
             "image": "https://i.ibb.co/NjSp7ht/warranty-checker.png",
             "creator": "Alen Jakob",
             "technologies": [
@@ -88,14 +87,13 @@
         {
             "id": 6,
             "title": "Contact Form",
-            "content": "The contact form is working with firebase, last time added an option to read all messages after login the user the messages will be displayed bottom of the website that we are able to delete , the option is set for testing purpose",
+            "content": "The contact form is working with firebase, last time added an option to read all messages after login the user the messages will be displayed bottom of the website that we are able to delete , the option is set for testing purpose.",
             "image": "https://i.ibb.co/vXrdv5m/contact-form.png",
             "creator": "Alen Jakob",
             "technologies": [
                 "HTML5",
                 "CSS3",
                 "Bulma",
-                "Rwd",
                 "Javascript",
                 "Firebase"
             ],

@@ -1,8 +1,8 @@
 <template>
-  <v-card class="mx-auto" max-width="400">
+  <v-card class="mx-auto" max-width="440" min-height="355"  style="overflow-y: auto; height:650px">
     <v-img
       class="white--text align-end"
-      height="300px"
+      height="355px"
       :src="project.image"
       :alt="project.image"
     >
