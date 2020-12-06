@@ -6,25 +6,26 @@ Vue.use(Vuex, axios);
 export default new Vuex.Store({
   state: {
     count: 1,
+    projects: [],
     projectEndPoint:
-      "my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
+      "https://my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
   },
   actions: {
     async loadProducts({ commit }) {
       await axios
-        .get(this.state.getProducts)
+        .get(this.state.projectEndPoint)
         .then((result) => {
-          commit("LOAD_PRODUCTS", result.data);
+          console.log(result.data)
+          commit("LOAD_PROJECTS", result.data);
         })
         .catch((error) => {
-          throw new Error(`API ${error}`);
+         console.log(`API ${error}`);
         });
     },
   },
   mutations: {
-    increment(state) {
-      state.count++;
-      // does happend
+    LOAD_PROJECTS(state, projects) {
+      state.projects = projects
     },
   },
 });

@@ -1,7 +1,9 @@
 {
     "projects": [
         {
-            "name": "Website",
+            "title": "Website",
+            "content":"",
+            "image":"link jpg",
             "creator": "Alen",
             "technologies": [
                 "Javascript",
