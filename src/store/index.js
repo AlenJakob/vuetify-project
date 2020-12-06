@@ -16,6 +16,7 @@ export default new Vuex.Store({
         .get(this.state.projectEndPoint)
         .then((result) => {
           commit("LOAD_PROJECTS", result.data);
+          localStorage.setItem("projects", JSON.stringify(result.data));
         })
         .catch((error) => {
           console.log(`API ${error}`);
