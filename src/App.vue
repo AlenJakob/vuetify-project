@@ -13,5 +13,8 @@ export default {
   components: {
     Navigation,
   },
+  computed: {
+  
+  },
 };
 </script>

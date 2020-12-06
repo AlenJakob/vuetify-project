@@ -15,11 +15,10 @@ export default new Vuex.Store({
       await axios
         .get(this.state.projectEndPoint)
         .then((result) => {
-          console.log(result.data)
           commit("LOAD_PROJECTS", result.data);
         })
         .catch((error) => {
-         console.log(`API ${error}`);
+          console.log(`API ${error}`);
         });
     },
   },
@@ -27,5 +26,6 @@ export default new Vuex.Store({
     LOAD_PROJECTS(state, projects) {
       state.projects = projects
     },
-  },
+  }
 });
+
