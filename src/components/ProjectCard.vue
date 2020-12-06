@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto height-card d-flex flex-column" max-width="500">
+  <v-card class="mx-auto height-card d-flex flex-column" max-width="540">
     <v-img
       class="white--text align-end"
       :src="project.image"
