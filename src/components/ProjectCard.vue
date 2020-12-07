@@ -46,7 +46,7 @@
             class="button"
             elevation="2"
             :data-id="project.id"
-            @click.native="displaySingleProject()"
+            @click.native="displaySingleProject($emit)"
           >
             Read more... {{ project.id }}
           </v-btn>
