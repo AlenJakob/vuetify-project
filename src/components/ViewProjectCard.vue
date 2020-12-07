@@ -9,14 +9,14 @@
 
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">{{ project}}</h3>
+            <h3 class="headline mb-0">project title</h3>
             <div></div>
           </div>
         </v-card-title>
 
         <v-card-actions>
           <v-btn text color="orange">Share</v-btn>
-          <v-btn text color="orange">Explore</v-btn>
+          <v-btn text color="orange" @click="expanedCard()">Explore</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -26,9 +26,19 @@
 <script>
 export default {
   props: {
-    projects: Object,
+    project: {
+      type: Object,
+      required: true,
+    },
+    activeCard: {
+      type: [String, Number],
+      required: true,
+    },
   },
-  mounted(){
-  }
+  methods: {
+    expanedCard() {
+      this.$emit('expand-card', this.project.id)
+    },
+  },
 };
 </script>

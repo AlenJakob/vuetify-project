@@ -5,7 +5,12 @@
         <v-app-bar-nav-icon class="mx-1" @click="drawer = !drawer" />
         <v-toolbar-title>Vuetify Project</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-toolbar-items v-for="link in links" :key="link.id">
+
+        <v-toolbar-items
+          :permanent="!$vuetify.breakpoint.mdAndUp"
+          v-for="link in links"
+          :key="link.id"
+        >
           <v-btn text :to="link.dir">{{ link.to }}</v-btn>
         </v-toolbar-items>
 
@@ -20,9 +25,7 @@
             <v-icon>mdi-plus-circle</v-icon>
           </v-btn>
         </template>  -->
-
       </v-app-bar>
-
 
       <v-navigation-drawer
         dark
@@ -33,7 +36,9 @@
       >
         <v-list-item>
           <v-list-item-avatar>
-            <v-img src="https://avatars2.githubusercontent.com/u/33994452?v=4"></v-img>
+            <v-img
+              src="https://avatars2.githubusercontent.com/u/33994452?v=4"
+            ></v-img>
           </v-list-item-avatar>
 
           <v-list-item-content>

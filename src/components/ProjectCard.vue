@@ -12,8 +12,8 @@
       <v-card-title>{{ project.title }}</v-card-title>
       <!-- <v-card-subtitle class="pb-0">{{ project.id }} </v-card-subtitle> -->
 
-      <v-card-text class="text--primary">
-        <div>{{ project.content.substring(0, 80) }}...</div>
+      <v-card-text class="text--primary" v-if="activeCard">
+        <div>{{ project.content}}</div>
       </v-card-text>
 
       <v-container>
@@ -32,7 +32,7 @@
             depressed
             :href="project.sourceLink"
           >
-            View Source
+            Source
           </v-btn>
           <v-btn
             elevation="2"
@@ -42,13 +42,8 @@
           >
             Visit Website
           </v-btn>
-          <v-btn
-            class="button"
-            elevation="2"
-            :data-id="project.id"
-            @click.native="displaySingleProject($emit)"
-          >
-            Read more... {{ project.id }}
+          <v-btn class="button" elevation="2" @click.native="expanedCard()">
+            Read more
           </v-btn>
         </v-card-actions>
       </v-container>
@@ -58,14 +53,43 @@
 
 
 <script>
+// import viewProjectCard from "./ViewProjectCard";
+// export default {
+//   components: {
+//     viewProjectCard,
+//   },
+//   data() {
+//     return {
+//       currentId: Number,
+//       active: false,
+//     };
+//   },
+//   props: {
+//     project: Object,
+//   },
+//   methods: {
+//     displaySingleProject(id) {
+//       console.log(id);
+//       this.currentId = id;
+//          this.$emit('expand-card', this.project.id)
+//     },
+//   },
+// };
+
 export default {
-  components: {},
   props: {
-    project: Object,
+    project: {
+      type: Object,
+      required: true,
+    },
+    activeCard: {
+      type: [String, Number, Boolean],
+      required: true,
+    },
   },
   methods: {
-    displaySingleProject() {
-      console.log(event.target);
+    expanedCard() {
+      this.$emit("expand-card", this.project.id);
     },
   },
 };

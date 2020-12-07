@@ -14,7 +14,11 @@
           md6
         >
           <v-col>
-            <ProjectCard :project="project" />
+            <ProjectCard
+              :project="project"
+              :active-card="project.id === activeCard"
+              @expand-card="makeActiveCard($event)"
+            />
           </v-col>
         </v-flex>
       </v-layout>
@@ -22,9 +26,7 @@
       <v-layout v-else>
         <v-flex class="my-5" fluid xs12 md6>
           <v-btn>return</v-btn>
-          <v-col>
-            <ViewProjectCard :project="project" />
-          </v-col>
+          <v-col> <ViewProjectCard :project="project" /> </v-col>
         </v-flex>
       </v-layout>
     </v-container>
@@ -34,8 +36,8 @@
 
 
 <script>
-import ViewProjectCard from "@/components/ViewProjectCard";
 import ProjectCard from "@/components/ProjectCard";
+import ViewProjectCard from "@/components/ViewProjectCard";
 export default {
   components: {
     ProjectCard,
@@ -43,6 +45,7 @@ export default {
   },
   data() {
     return {
+      activeCard: Boolean,
       ok: true,
       url: "my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
     };
@@ -55,6 +58,11 @@ export default {
       } else {
         return this.$store.state.projects;
       }
+    },
+  },
+  methods: {
+    makeActiveCard(id) {
+      this.activeCard = id;
     },
   },
 };
