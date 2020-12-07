@@ -13,6 +13,8 @@ export default {
   components: {
     Navigation,
   },
-  computed: {},
+  beforeCreate() {
+    this.$store.dispatch("loadProducts");
+  },
 };
 </script>

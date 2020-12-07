@@ -45,18 +45,17 @@ export default {
     return {
       ok: true,
       url: "my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
-      projectsList: [],
     };
   },
   computed: {
     getProjectsFromLocalStorage() {
       const projects = localStorage.getItem("projects");
-      return JSON.parse(projects);
+      if (projects) {
+        return JSON.parse(projects);
+      } else {
+        return this.$store.state.projects;
+      }
     },
-  },
-  beforeMount() {
-    this.$store.dispatch("loadProducts");
-    this.projectsList = this.$store.state.projects;
   },
 };
 </script>
