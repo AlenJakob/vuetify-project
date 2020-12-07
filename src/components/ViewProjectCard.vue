@@ -31,7 +31,7 @@ export default {
       required: true,
     },
     activeCard: {
-      type: [String, Number],
+      type: [String, Number,Boolean],
       required: true,
     },
   },
