@@ -6,7 +6,7 @@
         <v-col cols="12" sm="6">
           <v-card class="pa-2" outlined tile> :) </v-card>
         </v-col>
-        <v-col :key="n" cols="12" sm="6">
+        <v-col cols="12" sm="6">
           <v-card class="pa-2" outlined tile>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nemo,
             ipsam eum dignissimos eos, commodi mollitia nobis reprehenderit

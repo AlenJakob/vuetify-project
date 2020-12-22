@@ -3,28 +3,16 @@
     <div>
       <v-app-bar dark>
         <v-app-bar-nav-icon class="mx-1" @click="drawer = !drawer" />
-        <v-toolbar-title>Vuetify Project</v-toolbar-title>
+        <v-toolbar-title>Alen Jakob</v-toolbar-title>
         <v-spacer></v-spacer>
 
         <v-toolbar-items
-          :permanent="!$vuetify.breakpoint.mdAndUp"
+          class="menu_navbar"
           v-for="link in links"
           :key="link.id"
         >
-          <v-btn text :to="link.dir">{{ link.to }}</v-btn>
+          <v-btn class="menu_navbar" text :to="link.dir">{{ link.to }}</v-btn>
         </v-toolbar-items>
-
-        <!-- <template v-if="$vuetify.breakpoint.smAndUp">
-          <v-btn icon>
-            <v-icon>mdi-export-variant</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon>mdi-delete-circle</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon>mdi-plus-circle</v-icon>
-          </v-btn>
-        </template>  -->
       </v-app-bar>
 
       <v-navigation-drawer
@@ -75,14 +63,19 @@ export default {
       ],
     };
   },
-  mounted() {},
+  methods: {},
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 a {
   color: white !important;
   text-decoration: none;
   text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .v-toolbar__items.menu_navbar {
+    display: none !important;
+  }
 }
 </style>
