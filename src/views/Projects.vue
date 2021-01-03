@@ -8,7 +8,7 @@
         <v-flex
           class="my-5"
           fluid
-          v-for="project in getProjectsFromLocalStorage"
+          v-for="project in getProjectsFromLocalStorage.reverse()"
           :key="project.id"
           xs12
           md6

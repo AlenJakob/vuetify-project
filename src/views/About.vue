@@ -1,21 +1,26 @@
 
  <template>
-  <v-container class="grey lighten-5">
+  <v-container class="grey lighten-5 my-6">
     <v-main>
-      <v-row no-gutters>
+      <v-row no-gutters  align="center" justify="center">
         <v-col cols="12" sm="6">
-          <v-card class="pa-2" outlined tile> :) </v-card>
+          <About />
         </v-col>
         <v-col cols="12" sm="6">
-          <v-card class="pa-2" outlined tile>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nemo,
-            ipsam eum dignissimos eos, commodi mollitia nobis reprehenderit
-            impedit, cum minima voluptates facere recusandae numquam vel ipsa ex
-            velit voluptas?
-          </v-card>
+          <AboutInfo />
         </v-col>
       </v-row>
     </v-main>
   </v-container>
 </template>
  
+<script>
+import About from "@/components/info/aboutMe";
+import AboutInfo from "@/components/info/aboutInfo";
+export default {
+  components: {
+    About,
+    AboutInfo,
+  },
+};
+</script>
