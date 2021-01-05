@@ -99,7 +99,5 @@ export default {
 .height-card {
   height: 620px !important;
 }
-.non-opacity{
-  opacity:1!important;
-}
+
 </style>

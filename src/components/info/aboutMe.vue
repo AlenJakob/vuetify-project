@@ -2,10 +2,11 @@
   <v-row justify="space-around">
     <v-card >
       <v-img
+ 
         height="200px"
         src="https://cdn.pixabay.com/photo/2015/08/13/01/00/keyboard-886462_1280.jpg"
       >
-        <v-app-bar flat color="rgba(0, 0, 0, .8)">
+        <v-app-bar flat color="rgba(0, 0, 0, .8)" >
           <v-toolbar-title class="title white--text pl-0 text-shadow">
             About me
           </v-toolbar-title>
@@ -54,7 +55,7 @@ export default {
 .text-shadow {
   text-shadow: 0 0 3px black;
 }
-.v-image__image.v-image__image--cover {
+.img {
   opacity: 0.2;
 }
 </style>
