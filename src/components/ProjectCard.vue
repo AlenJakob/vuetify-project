@@ -2,7 +2,7 @@
   <v-container>
     <v-card class="mx-auto" min-height="500">
       <v-img
-        class="white--text"
+        class="white--text non-opacity"
         min-height="320px"
         :src="project.image"
         :alt="project.image"
@@ -98,5 +98,8 @@ export default {
 <style lang="scss">
 .height-card {
   height: 620px !important;
+}
+.non-opacity{
+  opacity:1!important;
 }
 </style>

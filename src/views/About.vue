@@ -1,16 +1,14 @@
 
  <template>
-  <v-container class="grey lighten-5 my-6">
-    <v-main>
-      <v-row no-gutters  align="center" justify="center">
-        <v-col cols="12" sm="6">
-          <About />
-        </v-col>
-        <v-col cols="12" sm="6">
-          <AboutInfo />
-        </v-col>
-      </v-row>
-    </v-main>
+  <v-container class="grey lighten-5 my-6"  style="margin: 0 auto; padding: 0px; max-width: 1200px">
+    <v-row>
+      <v-col cols="12" sm="12">
+        <About />
+      </v-col>
+      <v-col cols="12" sm="12">
+        <AboutInfo />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
  
