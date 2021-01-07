@@ -22,7 +22,7 @@
               />
             </v-avatar>
 
-            <p class="ml-3">Alen Jakob</p>
+            <p class="ml-3">Alen Jakob </p>
           </v-card-title>
         </v-app-bar>
       </v-img>
@@ -55,7 +55,5 @@ export default {
 .text-shadow {
   text-shadow: 0 0 3px black;
 }
-.img {
-  opacity: 0.2;
-}
+
 </style>

@@ -34,7 +34,11 @@
 </template>
 
 
-
+<style>
+.v-image__image.v-image__image--cover {
+  opacity: 1 !important;
+}
+</style>
 <script>
 import ProjectCard from "@/components/ProjectCard";
 import ViewProjectCard from "@/components/ViewProjectCard";

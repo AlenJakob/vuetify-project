@@ -13,7 +13,7 @@
       <!-- <v-card-subtitle class="pb-0">{{ project.id }} </v-card-subtitle> -->
 
       <v-card-text class="text--primary" v-if="activeCard">
-        <div>{{ project.content}}</div>
+        <div>{{ project.content }}</div>
       </v-card-text>
 
       <v-container>
@@ -99,5 +99,4 @@ export default {
 .height-card {
   height: 620px !important;
 }
-
 </style>
