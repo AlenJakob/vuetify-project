@@ -2,7 +2,9 @@
   <div>
     <v-app-bar dark>
       <v-app-bar-nav-icon class="mx-1" @click="drawer = !drawer" />
-      <v-toolbar-title>Alen Jakob</v-toolbar-title>
+      <router-link to="/about">
+        <v-toolbar-title>Alen Jakob</v-toolbar-title>
+      </router-link>
       <v-spacer></v-spacer>
 
       <v-toolbar-items class="menu_navbar" v-for="link in links" :key="link.id">

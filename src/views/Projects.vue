@@ -1,14 +1,14 @@
 <template>
   <div class="about" max-width="500">
-    <v-app-bar class="mb-5">
-      <h4>Projects</h4>
+    <v-app-bar class="mb-1">
+      <h4 class="subtitle-2">Projects</h4>
     </v-app-bar>
     <v-container>
       <v-layout row v-if="ok">
         <v-flex
           class="my-5"
           fluid
-          v-for="project in getProjectsFromLocalStorage.reverse()"
+          v-for="project in getProjectsFromLocalStorage"
           :key="project.id"
           xs12
           md6
@@ -58,7 +58,7 @@ export default {
     getProjectsFromLocalStorage() {
       const projects = localStorage.getItem("projects");
       if (projects) {
-        return JSON.parse(projects);
+        return JSON.parse(projects).reverse();
       } else {
         return this.$store.state.projects;
       }
