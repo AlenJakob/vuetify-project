@@ -5,7 +5,7 @@
       <router-link to="/">
         <v-toolbar-title>Alen Jakob</v-toolbar-title>
       </router-link>
-      <v-spacer></v-spacer>
+     
 
       <v-toolbar-items class="menu_navbar" v-for="link in links" :key="link.id">
         <v-btn class="menu_navbar" text :to="link.dir">{{ link.to }}</v-btn>

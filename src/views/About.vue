@@ -5,10 +5,10 @@
       <h4 class="subtitle-2">About me</h4>
     </v-app-bar>
     <v-row class="max-width-center my-5">
-      <v-col xl="8" lg="8" md="9" sm="8" xs="12">
+      <v-col xl="8" lg="8" md="8" sm="7" xs="12">
         <About />
       </v-col>
-      <v-col xl="4" lg="4" md="3" sm="4" xs="12">
+      <v-col xl="4" lg="4" md="3" sm="5" xs="12">
         <AboutInfo />
       </v-col>
     </v-row>

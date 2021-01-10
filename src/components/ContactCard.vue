@@ -28,13 +28,13 @@ export default {
       {
         name: "Linkedin",
         icon: "mdi-linkedin",
-        val: "click to redirect",
+        val: "Click to view",
         href: "https://www.linkedin.com/in/alen-jakob",
       },
       {
         name: "Github",
         icon: "mdi-github",
-        val: "click to redirect",
+        val: "Click to view",
         href: "https://www.linkedin.com/in/alen-jakob",
       },
     ],
@@ -45,5 +45,8 @@ export default {
 <style scoped>
 .v-application a {
   color: #1976d2 !important;
+}
+.v-application a:hover {
+  color: blue!important;
 }
 </style>

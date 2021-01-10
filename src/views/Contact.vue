@@ -5,12 +5,12 @@
     </v-app-bar>
     <v-container class="my-6">
       <v-row class="my-6 py-2" align="center">
-        <v-col md="6" sm="12">
+        <v-col md="6" sm="12"
+          ><h1 class="pb-6 d-flex justify-center sxx">Contact me</h1>
           <ContactCard />
         </v-col>
-        <v-col md="6" sm="12"
-          ><h1 class="pb-6 d-flex justify-center">Contact me</h1>
-          <Inbox class="mt-4" />
+        <v-col md="6" sm="12">
+          <Inbox class="mt-6 pt-6 sx" />
         </v-col>
       </v-row>
     </v-container>
@@ -21,6 +21,7 @@
 * {
   transition: 0.3s;
 }
+
 </style>
 <script>
 import Inbox from "@/components/Inbox.vue";

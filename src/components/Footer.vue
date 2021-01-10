@@ -24,7 +24,6 @@ export default {
   data: () => ({
     links: [],
   }),
-
   created() {
     this.$router.options.routes.forEach((link) => {
       this.links.push({
