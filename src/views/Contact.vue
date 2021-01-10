@@ -3,53 +3,33 @@
     <v-app-bar class="mb-1">
       <h4 class="subtitle-2">Contact</h4>
     </v-app-bar>
-    <v-divider></v-divider>
-    <v-container>
-      <v-row>
-        <v-col cols="6">
-          <v-card class="mx-auto" max-width="500">
-            <v-list>
-              <v-list-item-group>
-                <v-list-item
-                  v-for="(item, i) in contact"
-                  :key="i"
-                  :disabled="true"
-                >
-                  <v-list-item-icon>
-                    <v-icon v-text="item.icon"></v-icon>
-                  </v-list-item-icon>
-                  <v-list-item>
-                    <v-list-item-content>
-                      <v-list-item-title
-                        >{{ item.name }}:
-                        <b>{{ item.val }}</b></v-list-item-title
-                      >
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
-          </v-card>
+    <v-container class="my-6">
+      <v-row class="my-6 py-2" align="center">
+        <v-col md="6" sm="12">
+          <ContactCard />
         </v-col>
-        <v-col align="center" justify="center"><Inbox /></v-col>
+        <v-col md="6" sm="12"
+          ><h1 class="pb-6 d-flex justify-center">Contact me</h1>
+          <Inbox class="mt-4" />
+        </v-col>
       </v-row>
     </v-container>
   </div>
 </template>
 
-
+<style  scoped>
+* {
+  transition: 0.3s;
+}
+</style>
 <script>
 import Inbox from "@/components/Inbox.vue";
 
+import ContactCard from "@/components/ContactCard.vue";
 export default {
   components: {
     Inbox,
+    ContactCard,
   },
-  data: () => ({
-    contact: [
-      { name: "email", val: "alenjakob@gmail.com", icon: "mdi-email" },
-      { name: "mobile", val: "694754094", icon: "mdi-phone" },
-    ],
-  }),
 };
 </script>
