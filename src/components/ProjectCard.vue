@@ -53,28 +53,6 @@
 
 
 <script>
-// import viewProjectCard from "./ViewProjectCard";
-// export default {
-//   components: {
-//     viewProjectCard,
-//   },
-//   data() {
-//     return {
-//       currentId: Number,
-//       active: false,
-//     };
-//   },
-//   props: {
-//     project: Object,
-//   },
-//   methods: {
-//     displaySingleProject(id) {
-//       console.log(id);
-//       this.currentId = id;
-//          this.$emit('expand-card', this.project.id)
-//     },
-//   },
-// };
 
 export default {
   props: {

@@ -35,7 +35,7 @@ export default {
         name: "Github",
         icon: "mdi-github",
         val: "Click to view",
-        href: "https://www.linkedin.com/in/alen-jakob",
+        href: "https://github.com/AlenJakob",
       },
     ],
   }),

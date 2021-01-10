@@ -4,7 +4,7 @@
       <h4 class="subtitle-2">Projects</h4>
     </v-app-bar>
     <v-container>
-      <v-layout row v-if="ok">
+      <v-row v-if="ok">
         <v-flex
           class="my-5"
           fluid
@@ -21,14 +21,14 @@
             />
           </v-col>
         </v-flex>
-      </v-layout>
+      </v-row>
       <!-- display signle card -->
-      <v-layout v-else>
+      <v-row v-else>
         <v-flex class="my-5" fluid xs12 md6>
           <v-btn>return</v-btn>
           <v-col> <ViewProjectCard :project="project" /> </v-col>
         </v-flex>
-      </v-layout>
+      </v-row>
     </v-container>
   </div>
 </template>
