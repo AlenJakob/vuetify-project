@@ -1,47 +1,48 @@
 <template>
-    <v-row justify="space-around">
-      <v-card>
-        <v-card-text>
-          <div class="font-weight-bold ml-8 mb-2">Technologies Stack</div>
+  <v-row justify="space-around" class="min-width">
+    <v-card>
+      <v-card-text>
+        <div class="font-weight-bold ml-8 mb-2">Technologies Stack</div>
 
-          <v-timeline align-top dense>
-            <v-timeline-item
-              v-for="tech in technologies"
-              :key="tech.name"
-              :color="tech.color"
-              small
-            >
-              <div>
-                <div class="font-weight-normal">
-                  <strong>#{{ tech.name }}</strong>
-                  <p>{{ tech.desc }}</p>
-                </div>
+        <v-timeline align-top dense>
+          <v-timeline-item
+            v-for="tech in technologies"
+            :key="tech.name"
+            :color="tech.color"
+            small
+          >
+            <div>
+              <div class="font-weight-normal">
+                <strong>#{{ tech.name }}</strong>
+                <p></p>
+                <p></p>
               </div>
-            </v-timeline-item>
-          </v-timeline>
-        </v-card-text>
+            </div>
+          </v-timeline-item>
+        </v-timeline>
+      </v-card-text>
 
-        <!-- graphic stack -->
-        <v-card-text>
-          <div class="font-weight-bold ml-8 mb-2">Graphic Stack</div>
+      <!-- graphic stack -->
+      <v-card-text>
+        <div class="font-weight-bold ml-8 mb-2">Graphic Stack</div>
 
-          <v-timeline align-top dense>
-            <v-timeline-item
-              v-for="graph in graphic"
-              :key="graph.name"
-              :color="graph.color"
-              small
-            >
-              <div>
-                <div class="font-weight-normal">
-                  <strong>#{{ graph.name }}</strong>
-                </div>
+        <v-timeline align-top dense>
+          <v-timeline-item
+            v-for="graph in graphic"
+            :key="graph.name"
+            :color="graph.color"
+            small
+          >
+            <div>
+              <div class="font-weight-normal">
+                <strong>#{{ graph.name }}</strong>
               </div>
-            </v-timeline-item>
-          </v-timeline>
-        </v-card-text>
-      </v-card>
-    </v-row>
+            </div>
+          </v-timeline-item>
+        </v-timeline>
+      </v-card-text>
+    </v-card>
+  </v-row>
 </template>
 
 <script>
@@ -101,5 +102,8 @@ export default {
 <style >
 .text-shadow {
   text-shadow: 0 0 3px black;
+}
+.v-card {
+  min-width: 280px;
 }
 </style>

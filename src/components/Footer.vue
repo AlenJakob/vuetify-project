@@ -1,4 +1,4 @@
-<template >
+<template>
   <v-footer color="cyan darken-2" padless>
     <v-row justify="center" no-gutters>
       <v-btn
@@ -7,7 +7,7 @@
         color="white"
         text
         rounded
-        class="my-2"
+        class="my-1"
         @click="$router.push(link.path).catch(() => {})"
       >
         {{ link.name }}

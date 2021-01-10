@@ -1,17 +1,18 @@
 
  <template>
-  <v-container
-    class="grey lighten-5 my-5 max-width-center"
-  >
-    <v-row>
-      <v-col cols="12" sm="12">
+  <div>
+    <v-app-bar class="mb-1">
+      <h4 class="subtitle-2">About me</h4>
+    </v-app-bar>
+    <v-row class="max-width-center my-5">
+      <v-col xl="8" lg="8" md="9" sm="8" xs="12">
         <About />
       </v-col>
-      <v-col cols="12" sm="12">
+      <v-col xl="4" lg="4" md="3" sm="4" xs="12">
         <AboutInfo />
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
  
 <script>
@@ -27,8 +28,12 @@ export default {
 
 <style >
 .max-width-center {
-  margin: 0 auto;
-  padding: 0px;
   max-width: 1100px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .v-card {
+    width: 100%;
+  }
 }
 </style>
