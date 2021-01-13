@@ -18,17 +18,17 @@
 
       <v-container>
         <v-divider></v-divider>
-        <v-card-actions class="justify-center">
+        <v-card-actions class="justify-center flex-wrap">
           <v-chip-group v-for="tech in project.technologies" :key="tech">
             <v-chip>{{ tech }}</v-chip>
           </v-chip-group>
         </v-card-actions>
 
         <v-divider></v-divider>
-        <v-card-actions class="my-2 pb-1 justify-center">
+        <v-card-actions class="my-2  pb-1 justify-center flex-wrap">
           <v-btn
             elevation="2"
-            class="black"
+            class="black mb-4"
             depressed
             :href="project.sourceLink"
           >
@@ -36,13 +36,13 @@
           </v-btn>
           <v-btn
             elevation="2"
-            color="success"
+            color="cyan mb-4"
             depressed
             :href="project.projectLink"
           >
             Visit Website
           </v-btn>
-          <v-btn class="button" elevation="2" @click.native="expanedCard()">
+          <v-btn class="button mb-4" elevation="2" @click.native="expanedCard()">
             Read more
           </v-btn>
         </v-card-actions>

@@ -1,5 +1,5 @@
 <template>
-  <v-layout>
+  <v-row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-img
@@ -20,9 +20,11 @@
         </v-card-actions>
       </v-card>
     </v-flex>
-  </v-layout>
+  </v-row>
 </template>
 
+<style >
+</style>
 <script>
 export default {
   props: {
@@ -31,13 +33,13 @@ export default {
       required: true,
     },
     activeCard: {
-      type: [String, Number,Boolean],
+      type: [String, Number, Boolean],
       required: true,
     },
   },
   methods: {
     expanedCard() {
-      this.$emit('expand-card', this.project.id)
+      this.$emit("expand-card", this.project.id);
     },
   },
 };

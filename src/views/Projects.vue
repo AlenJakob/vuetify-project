@@ -1,10 +1,10 @@
 <template>
-  <div class="about" max-width="500">
+  <div class="about"  max-width="500">
     <v-app-bar class="mb-1">
       <h4 class="subtitle-2">Projects</h4>
     </v-app-bar>
-    <v-container>
-      <v-row v-if="ok">
+    <v-container class="max-width">
+      <v-row v-if="ok" >
         <v-flex
           class="my-5"
           fluid
@@ -35,6 +35,9 @@
 
 
 <style>
+.max-width{
+  max-width: 960px;
+}
 .v-image__image.v-image__image--cover {
   opacity: 1 !important;
 }

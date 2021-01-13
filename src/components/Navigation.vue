@@ -3,7 +3,7 @@
     <v-app-bar dark>
       <v-app-bar-nav-icon class="mx-1" @click="drawer = !drawer" />
       <router-link to="/">
-        <v-toolbar-title>Alen Jakob</v-toolbar-title>
+        <Bull />
       </router-link>
 
       <v-spacer></v-spacer>
@@ -47,7 +47,11 @@
 </template>
 
 <script>
+import Bull from "@/components/Bull";
 export default {
+  components: {
+    Bull,
+  },
   data() {
     return {
       direction: { rtl: true, ltr: false },

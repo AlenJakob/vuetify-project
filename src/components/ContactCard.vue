@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto pl-5" max-width="400">
+  <v-card class="mx-auto pl-5" >
     <v-list-item-content v-for="(item, i) in contactList" :key="i">
       <v-list-item
         ><v-icon medium color="cyan darken-2"> {{ item.icon }}</v-icon>

@@ -1,6 +1,11 @@
 <template>
-  <v-footer color="cyan darken-1" padless>
-    <v-row justify="center" no-gutters>
+  <v-footer padless>
+    <v-row
+      justify="center"
+      class="cyan darken-1"
+      color="cyan darken-1"
+      no-gutters
+    >
       <v-btn
         v-for="link in links"
         :key="link.length"
@@ -12,12 +17,39 @@
       >
         {{ link.name }}
       </v-btn>
-      <v-col class="grey darken-4 py-4 text-center white--text" cols="12">
-        {{ new Date().getFullYear() }} — <strong>Alen Jakob</strong>
-      </v-col>
     </v-row>
+    <v-col class="text-center" cols="12">
+      <footer class="footer ">
+        <div class="content has-text-centered">
+          <p>
+            {{ new Date().getFullYear() }} — Created by
+            <b class="has-text-info">Alen Jakob</b>
+          </p>
+          <p>
+            check
+
+            <a class="has-text-black" href="https://github.com/AlenJakob"
+              ><i class="fab fa-github-alt fa-lg"></i> My Github</a
+            >
+            /
+            <a href="https://www.linkedin.com/in/alen-jakob/"
+              ><i class="fab fa-linkedin fa-lg"></i> Linkedin</a
+            >
+            or just contact me via email
+            <a href="mailto:alenjakob@gmail.com">alenjakob@gmail.com</a>.
+          </p>
+        </div>
+      </footer>
+    </v-col>
   </v-footer>
 </template>
+
+<style scoped>
+.v-application a {
+  color:darkcyan!important;
+}
+</style>
+
 
 <script>
 export default {
@@ -34,6 +66,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
