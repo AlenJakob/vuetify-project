@@ -1,10 +1,10 @@
 <template>
-  <div class="about"  max-width="500">
+  <div class="about" max-width="500">
     <v-app-bar class="mb-1">
-      <h4 class="subtitle-2">Projects</h4>
+      <h4 class="subtitle-2">Projects sssssssss</h4>
     </v-app-bar>
     <v-container class="max-width">
-      <v-row v-if="ok" >
+      <div class="row" v-if="ok" style="flex-wrap: wrap">
         <v-flex
           class="my-5"
           fluid
@@ -21,21 +21,24 @@
             />
           </v-col>
         </v-flex>
-      </v-row>
+      </div>
       <!-- display signle card -->
-      <v-row v-else>
+      <div v-else class="row" style="flex-wrap: wrap">
         <v-flex class="my-5" fluid xs12 md6>
           <v-btn>return</v-btn>
           <v-col> <ViewProjectCard :project="project" /> </v-col>
         </v-flex>
-      </v-row>
+      </div>
     </v-container>
   </div>
 </template>
 
 
 <style>
-.max-width{
+.wrap {
+  flex-wrap: wrap !important;
+}
+.max-width {
   max-width: 960px;
 }
 .v-image__image.v-image__image--cover {
