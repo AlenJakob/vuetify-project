@@ -16,7 +16,7 @@
 
         <v-card-actions>
           <v-btn text color="orange">Share</v-btn>
-          <v-btn text color="orange" @click="expanedCard()">Explore</v-btn>
+          <v-btn text color="orange" @click="expanedCard()"></v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>

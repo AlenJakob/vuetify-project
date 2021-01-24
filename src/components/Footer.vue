@@ -19,7 +19,7 @@
       </v-btn>
     </v-row>
     <v-col class="text-center" cols="12">
-      <footer class="footer ">
+      <footer class="footer">
         <div class="content has-text-centered">
           <p>
             {{ new Date().getFullYear() }} — Created by
@@ -28,7 +28,7 @@
           <p>
             check
 
-            <a class="has-text-black" href="https://github.com/AlenJakob"
+            <a class="black--text" href="https://github.com/AlenJakob"
               ><i class="fab fa-github-alt fa-lg"></i> My Github</a
             >
             /
@@ -46,7 +46,7 @@
 
 <style scoped>
 .v-application a {
-  color:darkcyan!important;
+  color: darkcyan !important;
 }
 </style>
 

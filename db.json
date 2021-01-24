@@ -71,7 +71,7 @@
             "id": 5,
             "title": "Serial number checker",
             "content": "The warranty software which help customer to check the period of warranty( full information ) , how many months had passed from the production date to the current date.",
-            "image": "https://i.ibb.co/NjSp7ht/warranty-checker.png",
+            "image": "https://i.ibb.co/xYkP2Cr/bafang-warranty-web-app.png",
             "creator": "Alen Jakob",
             "technologies": [
                 "HTML5",
@@ -81,7 +81,7 @@
                 "Javascript"
             ],
             "sourceLink": "https://github.com/AlenJakob/serialno-checker",
-            "projectLink": "https://warranty-checker-255c2.web.app",
+            "projectLink": "https://bafang-warranty.web.app",
             "date": "2020-07-21"
         },
         {

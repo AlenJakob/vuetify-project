@@ -12,12 +12,20 @@
       <v-card-title>{{ project.title }}</v-card-title>
       <!-- <v-card-subtitle class="pb-0">{{ project.id }} </v-card-subtitle> -->
 
-      <v-card-text class="text--primary" v-if="activeCard">
+      <v-card-text class="text--primary" >
         <div>{{ project.content }}</div>
       </v-card-text>
 
       <v-container>
+        <v-btn
+          class="button mb-4 red--text small"
+          elevation="2"
+          @click.native="expanedCard()"
+        >
+          Read more
+        </v-btn>
         <v-divider></v-divider>
+
         <v-card-actions class="justify-center flex-wrap">
           <v-chip-group v-for="tech in project.technologies" :key="tech">
             <v-chip>{{ tech }}</v-chip>
@@ -25,7 +33,7 @@
         </v-card-actions>
 
         <v-divider></v-divider>
-        <v-card-actions class="my-2  pb-1 justify-center flex-wrap">
+        <v-card-actions class="my-2 pb-1 justify-center flex-wrap">
           <v-btn
             elevation="2"
             class="black mb-4"
@@ -42,9 +50,6 @@
           >
             Visit Website
           </v-btn>
-          <v-btn class="button mb-4" elevation="2" @click.native="expanedCard()">
-            Read more
-          </v-btn>
         </v-card-actions>
       </v-container>
     </v-card>
@@ -53,7 +58,6 @@
 
 
 <script>
-
 export default {
   props: {
     project: {

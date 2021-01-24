@@ -1,7 +1,7 @@
 <template>
   <div class="about" max-width="500">
     <v-app-bar class="mb-1">
-      <h4 class="subtitle-2">Projects sssssssss</h4>
+      <h4 class="subtitle-2">Projects Websites</h4>
     </v-app-bar>
     <v-container class="max-width">
       <div class="row" v-if="ok" style="flex-wrap: wrap">
