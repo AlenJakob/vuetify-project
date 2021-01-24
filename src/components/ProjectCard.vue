@@ -17,13 +17,13 @@
       </v-card-text>
 
       <v-container>
-        <v-btn
+        <!-- <v-btn
           class="button mb-4 red--text small"
           elevation="2"
           @click.native="expanedCard()"
         >
           Read more
-        </v-btn>
+        </v-btn> -->
         <v-divider></v-divider>
 
         <v-card-actions class="justify-center flex-wrap">

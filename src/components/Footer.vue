@@ -29,14 +29,14 @@
             check
 
             <a class="black--text" href="https://github.com/AlenJakob"
-              ><i class="fab fa-github-alt fa-lg"></i> My Github</a
+              ><i class="black--text fab fa-github-alt fa-lg"></i> My Github</a
             >
             /
-            <a href="https://www.linkedin.com/in/alen-jakob/"
+            <a class="blue--text text--darken-3" href="https://www.linkedin.com/in/alen-jakob/"
               ><i class="fab fa-linkedin fa-lg"></i> Linkedin</a
             >
             or just contact me via email
-            <a href="mailto:alenjakob@gmail.com">alenjakob@gmail.com</a>.
+            <a class="blue--text text--darken-2" href="mailto:alenjakob@gmail.com">alenjakob@gmail.com</a>.
           </p>
         </div>
       </footer>
@@ -45,9 +45,7 @@
 </template>
 
 <style scoped>
-.v-application a {
-  color: darkcyan !important;
-}
+
 </style>
 
 
