@@ -57,14 +57,14 @@ export default {
     return {
       activeCard: Boolean,
       ok: true,
-      url: "my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
+      // url: "my-json-server.typicode.com/AlenJakob/vuetify-project/projects",
     };
   },
   computed: {
     getProjectsFromLocalStorage() {
       const projects = localStorage.getItem("projects");
       if (projects) {
-        return JSON.parse(projects).reverse();
+      return JSON.parse(projects).reverse();
       } else {
         return this.$store.state.projects;
       }

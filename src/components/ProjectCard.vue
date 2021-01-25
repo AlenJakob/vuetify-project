@@ -33,10 +33,10 @@
         </v-card-actions>
 
         <v-divider></v-divider>
-        <v-card-actions class="my-2 pb-1 justify-center flex-wrap">
+        <v-card-actions class=" my-2 pb-1 justify-center flex-wrap">
           <v-btn
             elevation="2"
-            class="black mb-4"
+            class="black mb-4 white--text"
             depressed
             :href="project.sourceLink"
           >
@@ -44,7 +44,7 @@
           </v-btn>
           <v-btn
             elevation="2"
-            color="cyan mb-4"
+            color="cyan mb-4 white--text"
             depressed
             :href="project.projectLink"
           >
